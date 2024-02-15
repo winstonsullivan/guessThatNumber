@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="game-container">
+            <h1>Guess the Number!</h1>
+            <p id="message">Choose a game to start playing.</p>
+            <div id="game-controls">
+                <form id="inputForm" style="display:none;">
+                    <input type="text" id="userInput" placeholder="Enter your guess or H/L/C" autofocus>
+                    <button type="submit" class="game-button">Submit</button>
+                </form>
+                <button id="guessComputerNumber" class="game-button" onclick="playReverseGame()">Guess the Computer's Number</button>
+                <button id="computerGuesses" class="game-button" onclick="playOriginalGame()">Computer Guesses Your Number</button>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+          <p><a href="/../index.html">🏠</a></p>
+        </div>
+      </footer>
+    <script src="guessHTML.js"></script>
+</body>
+</html>
